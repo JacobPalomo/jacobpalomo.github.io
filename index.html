@@ -19,14 +19,14 @@
 			name="keywords"
 			content="programador, software-developer, developer, desarrollador de software, desarrollador, desarrollador web, web, programmer, artesano, craftsman, my-web-site"
 		/>
-		<meta name="robots" content="index, nofollow" />
+		<meta name="robots" content="index, follow" />
 		<meta
 			name="googlebot"
-			content="index, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+			content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 		/>
 		<meta
 			name="bingbot"
-			content="index, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+			content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 		/>
 		<meta
 			name="google-site-verification"
@@ -59,13 +59,13 @@
 		<nav>
 			<h2 class="logo"><a href="#" class="hgold">Jacob Palomo</a></h2>
 			<ul class="clearfix">
-				<li><a href="#about-me" id="menu-link">Sobre mí</a></li>
+				<li><a href="#about-me" class="menu-link">Sobre mí</a></li>
 				<li>
-					<a href="./pages/works/" id="menu-link">Mis trabajos</a>
+					<a href="./pages/works/" class="menu-link">Mis trabajos</a>
 				</li>
-				<li><a href="#contact" id="menu-link">Contacto</a></li>
+				<li><a href="#contact" class="menu-link">Contacto</a></li>
 			</ul>
-			<button class="btn btn-menu" id="btn-menu">
+			<button class="btn btn-menu" id="btn-menu" aria-label="Botón menú">
 				<ion-icon name="menu"></ion-icon>
 			</button>
 		</nav>
@@ -81,7 +81,7 @@
 			/>
 			<div>
 				<h1>👋🏻 ¡Hola, soy <span class="gold">Jacob</span>!</h1>
-				<h3 class="carrer">Software Developer</h3>
+				<h2 class="carrer">Software Developer</h2>
 			</div>
 		</header>
 
@@ -104,12 +104,12 @@
 						respuesta.
 					</p>
 					<p>
-						Puedes ver mi currículum
+						Aquí puedes ver
 						<a
 							href="./src/downloads/curriculum-jacobpalomo.pdf"
 							target="_blank"
 						>
-							aquí
+							mi currículum
 						</a>
 					</p>
 					<!-- <p>
@@ -404,13 +404,15 @@
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+			async
 		></script>
 		<script
 			nomodule
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+			async
 		></script>
 
 		<!-- App JS -->
-		<script src="./src/js/app.js"></script>
+		<script src="./src/js/app.js" async></script>
 	</body>
 </html>
